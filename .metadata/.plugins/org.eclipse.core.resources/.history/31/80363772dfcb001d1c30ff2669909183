@@ -1,0 +1,18 @@
+package com.psja.execution;
+
+import java.lang.Runnable;
+import java.util.function.Consumer;
+
+public class Thread1 implements Runnable{
+
+	public Integer data = 0;
+	@Override
+	public void run() {
+		
+		Consumer<Integer>		
+		synchronized( this ) {
+			
+		}
+	}
+	
+}

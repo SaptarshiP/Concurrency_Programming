@@ -1,0 +1,10 @@
+package com.psja.execution;
+
+public class Invoker {
+
+	public void invoke() {
+	
+		Job<Integer> jobInteger = new Job<>();
+		
+	}
+}

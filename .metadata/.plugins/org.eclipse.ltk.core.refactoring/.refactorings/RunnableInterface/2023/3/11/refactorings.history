@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;th&apos; in &apos;com.psja.RunnableInterface.main(...)&apos; to &apos;th3&apos;&#x0D;&#x0A;- Original project: &apos;RunnableInterface&apos;&#x0D;&#x0A;- Original element: &apos;com.psja.RunnableInterface.main(String[]).th&apos;&#x0D;&#x0A;- Renamed element: &apos;th&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;th&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.psja{RunnableInterface.java[RunnableInterface~main~\[QString;@th!1333!1393!1340!1341!QThread;!0!false" name="th3" references="true" stamp="1678949677931" version="1.0"/>
+</session>

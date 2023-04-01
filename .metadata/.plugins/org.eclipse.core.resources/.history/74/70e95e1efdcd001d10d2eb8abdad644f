@@ -1,0 +1,7 @@
+package com.psja.check;
+
+public interface Check {
+
+	public synchronized void Test( Check chk );
+	public synchronized void display();
+}

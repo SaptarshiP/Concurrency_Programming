@@ -1,0 +1,15 @@
+package com.psja.execution;
+
+import java.lang.Runnable;
+
+public class Thread1 implements Runnable{
+
+	public Integer data;
+	@Override
+	public void run() {
+		
+		for ( Integer i =0; i<10; i++ )
+			data = data+i;
+	}
+	
+}

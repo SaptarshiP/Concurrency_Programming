@@ -1,0 +1,9 @@
+package com.psja.check;
+
+public class Invoker {
+
+	
+	public void invoke() {
+		
+	}
+}

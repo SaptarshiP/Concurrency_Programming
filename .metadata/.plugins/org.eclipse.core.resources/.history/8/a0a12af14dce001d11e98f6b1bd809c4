@@ -1,0 +1,13 @@
+package com.psja.check;
+
+import java.lang.Thread;
+
+public class InvokerDaemon {
+
+	public void invoke() {
+		
+		MyThread myThread = new MyThread();
+		Thread th1 = new Thread( myThread );
+	}
+	
+}

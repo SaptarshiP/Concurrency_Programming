@@ -1,0 +1,18 @@
+package com.psja.execution;
+
+import java.lang.Runnable;
+
+public class ProducerThread implements Runnable  {
+
+	private Job job;
+	public void setJobThread( Job job ) {
+		this.job = job;
+	}
+	
+	@Override
+	public void run() {
+		
+		synchronized(  )
+	}
+	
+}

@@ -1,0 +1,24 @@
+package com.psja.execution;
+
+import java.lang.Runnable;
+
+public class ConsumerThread<T> implements Runnable {
+
+	private Job<T> job;
+	ConsumerThread( Job<T> job ){
+		this.job = job;
+	}
+	@Override
+	public void run() {
+		
+		synchronized( this.job ) {
+			if ( this.job.queue.isEmpty() ) {
+				try {
+					this.job.wait();
+				} catch( Exception exp ) {
+					System.out.println( exp.getMessage() );
+				}
+			}
+		}
+	}
+}

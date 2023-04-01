@@ -1,0 +1,23 @@
+package com.psja.execution;
+
+import java.lang.FunctionalInterface;
+import java.util.Queue;
+
+@FunctionalInterface
+interface CheckInterface{
+	public Integer apply( Integer data1, Integer data2 );
+}
+
+public class Job {
+
+	public Queue<Integer> queue = new Queue<>();
+	
+	public void j() {
+		CheckInterface checkInterface = ( data1, data2 )-> data1 * data2;
+		
+		for ( Integer i = 0; i< 10; ) {
+			data = checkInterface.apply( data, i );
+		}
+	}
+	
+}

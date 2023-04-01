@@ -1,0 +1,32 @@
+package com.psja.execution;
+
+import java.lang.Runnable;
+
+public class Thread1 implements Runnable{
+
+	public Integer data = 0;
+	@Override
+	public void run() {
+		
+		//synchronized(this) {
+		Thread2 th2 = new Thread2();
+		th2.start();
+		
+			for ( Integer i =0; i<10; i++ ) {
+				try {
+					th2.join();
+					//Thread.currentThread().sleep(2000);
+					//System.out.println( dt.getTime() );
+				}catch( Exception exp ) {
+					System.out.println( exp.getMessage() );
+				}
+				java.util.Date dt = new java.util.Date();
+				System.out.println( Thread.currentThread().getName() + ":" + dt.getTime() );
+				data = data+i;
+				
+			//}
+			//this.notify();
+		}
+	}
+	
+}

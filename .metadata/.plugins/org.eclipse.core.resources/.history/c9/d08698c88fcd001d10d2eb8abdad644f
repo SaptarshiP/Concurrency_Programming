@@ -1,0 +1,9 @@
+package com.psja.check;
+
+public class A {
+
+	public void Test() {
+		
+	}
+	
+}

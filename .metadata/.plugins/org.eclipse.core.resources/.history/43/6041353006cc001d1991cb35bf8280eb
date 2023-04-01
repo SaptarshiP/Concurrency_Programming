@@ -1,0 +1,32 @@
+package com.psja.execution;
+
+import java.lang.Runnable;
+import java.util.function.Consumer;
+
+public class ProducerThread implements Runnable  {
+
+	private Job<Integer> job;
+	public void setJobThread( Job<Integer> job ) {
+		this.job = job;
+	}
+	
+	@Override
+	public void run() {
+		
+		synchronized( job ) {
+			
+			Consumer< Integer > cons = ( data )->{
+											job.add(data);
+											try {
+												Thread.currentThread().sleep(2000);
+											} catch( Exception exp ) {
+												System.out.println( exp.getMessage() );
+											}
+			};
+
+			cons.accept( 1 );
+			this.notify();
+		}
+	}
+	
+}

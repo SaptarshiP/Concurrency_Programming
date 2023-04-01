@@ -1,0 +1,16 @@
+package com.psja.execution;
+
+import java.lang.Runnable;
+
+public class ConsumerThread implements Runnable {
+
+	private Job job;
+	ConsumerThread( Job job ){
+		this.job = job;
+	}
+	@Override
+	public void run() {
+		
+		
+	}
+}

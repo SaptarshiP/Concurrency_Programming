@@ -1,0 +1,14 @@
+package com.psja.execution;
+
+import java.lang.Thread;
+
+public class Thread2 extends Thread {
+
+	@Override
+	public void run() {
+		for ( Integer i = 0; i<5; i++ ) {
+			System.out.println( "In the third method" );
+		}
+			
+	}
+}

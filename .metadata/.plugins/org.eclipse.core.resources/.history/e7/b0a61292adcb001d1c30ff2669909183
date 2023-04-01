@@ -1,0 +1,26 @@
+package com.psja.execution;
+
+import java.lang.Runnable;
+
+public class Thread1 implements Runnable{
+
+	public Integer data = 0;
+	@Override
+	public void run() {
+		
+		//synchronized(this) {
+		Thread2 th2 = new Thread2();
+			for ( Integer i =0; i<10; i++ ) {
+				System.out.println( Thread.currentThread().getName() );
+				data = data+i;
+				try {
+					Thread.currentThread().sleep(2000);
+				}catch( Exception exp ) {
+					System.out.println( exp.getMessage() );
+				}
+			//}
+			//this.notify();
+		}
+	}
+	
+}

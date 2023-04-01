@@ -1,0 +1,22 @@
+package com.psja.execution;
+
+import java.lang.FunctionalInterface;
+
+@FunctionalInterface
+interface CheckInterface{
+	public Integer apply( Integer data1, Integer data2 );
+}
+
+public class Job {
+
+	private Integer data = 1;
+	
+	public void j() {
+		CheckInterface checkInterface = ( data1, data2 )-> data1 * data2;
+		
+		for ( Integer i = 0; i< 10; ) {
+			checkInteg
+		}
+	}
+	
+}

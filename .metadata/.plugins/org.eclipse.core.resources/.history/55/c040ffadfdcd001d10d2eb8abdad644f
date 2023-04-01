@@ -1,0 +1,23 @@
+package com.psja.check;
+
+import java.lang.Thread;
+
+public class A implements Check {
+
+	@Override
+	public synchronized void Test( Check chB ) {
+		System.out.println( "*****IN THE TEST A CLASS******: "+Thread.currentThread().getName() );
+		
+		try {
+			Thread.currentThread().sleep( 200000 );
+		} catch( InterruptedException exp ) {
+			System.out.println( "Exception is: "+exp.getMessage() );
+		}
+		chB.display();
+	}
+	
+	@Override
+	public void display() {
+		System.out.println( "***IN DISPLAY METHOD OF A****" );
+	}
+}

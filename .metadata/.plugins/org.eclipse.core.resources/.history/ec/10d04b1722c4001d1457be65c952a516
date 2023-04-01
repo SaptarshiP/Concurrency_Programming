@@ -1,0 +1,54 @@
+package com.psja;
+
+import static java.lang.System.out;
+import java.lang.Thread;
+import java.util.function.Consumer;
+
+import com.psja.check.MyThread;
+import com.psja.check.MyThreadWithName;
+import com.psja.check.MyThreadWithPriority;
+
+public class RunnableInterface {
+
+	public static void main( String args[] ) {
+		out.println("In the runnable interface");
+//		MyThread myThread = new MyThread();
+//		
+//		Thread th = new Thread( myThread );
+//		th.start();
+//		
+//		for ( Integer i =0; i<10; i++ ) {
+//			out.println( "In the main thread" + Thread.currentThread().getName() );
+//		}
+		
+		//Seting the name of the thread
+//		out.println( "********Setting the name of the thread*************" );
+//		Consumer<Thread> checkName = (t)->System.out.println("In main thread: "+t.getName());
+//		MyThreadWithName myThreadWithName = new MyThreadWithName();
+//		
+//		Thread th2 = new Thread( myThreadWithName, "PSJA_CHILD_1" );
+//		th2.start();
+//		
+//		Thread.currentThread().setName("PSJA_MAIN_1");
+//		Integer t = 0;
+//		for ( ;t<10; ) {
+//			checkName.accept( Thread.currentThread() );
+//			t++;
+//		}
+		
+		//Setting the priority of thread
+		out.println( "*******Setting the priority of the thread with name**********" );
+		MyThreadWithPriority myThreadWithPriority = new MyThreadWithPriority();
+		Thread th3 = new Thread( myThreadWithPriority, "PSJA_CHILD" );
+		th3.setPriority(1);
+		th3.start();
+		
+		Thread.currentThread().setName( "PSJA_MAIN" );
+		Thread.currentThread().setPriority(5);
+		
+		for ( Integer i =0; i<10; i++ ) {
+			out.println( "with loop"+Thread.currentThread().getName()+" : "+Thread.currentThread().getPriority() );
+		}
+	}
+	
+}

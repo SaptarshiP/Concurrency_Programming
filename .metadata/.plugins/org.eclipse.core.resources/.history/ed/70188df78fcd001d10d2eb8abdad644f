@@ -1,0 +1,9 @@
+package com.psja.check;
+
+public class B implements Check {
+
+	@Override
+	public void Test( Check chkA ) {
+		
+	}
+}

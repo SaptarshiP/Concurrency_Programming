@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.psja.check.MyThread"/>
+    <fullyQualifiedTypeName name="com.psja.check.MyThreadWithName"/>
+    <fullyQualifiedTypeName name="com.psja.check.MyThreadWithYield"/>
+    <fullyQualifiedTypeName name="com.psja.check.MyThreadWithJoinAndSleep"/>
+    <fullyQualifiedTypeName name="com.psja.check.MyChildThreadWillWaitMain"/>
+    <fullyQualifiedTypeName name="com.psja.check.MyThreadInterrupt"/>
+    <fullyQualifiedTypeName name="com.psja.execution.InvokerClass"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.psja.execution.Factory"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.psja.block.MethodLevelBlock"/>
+    <fullyQualifiedTypeName name="com.psja.block.InvokerClassMethodLevelBlock"/>
+    <fullyQualifiedTypeName name="com.psja.block.InvokerInterface"/>
+    <fullyQualifiedTypeName name="com.psja.block.InvokerClassLevelBlock"/>
+    <fullyQualifiedTypeName name="com.psja.execution.MainThread"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.function.BiFunction"/>
+    <fullyQualifiedTypeName name="java.util.AbstractQueue"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="javax.print.attribute.standard.QueuedJobCount"/>
+    <fullyQualifiedTypeName name="com.psja.execution.Invoker"/>
+    <fullyQualifiedTypeName name="com.psja.check.InvokerDaemon"/>
+</qualifiedTypeNameHistroy>

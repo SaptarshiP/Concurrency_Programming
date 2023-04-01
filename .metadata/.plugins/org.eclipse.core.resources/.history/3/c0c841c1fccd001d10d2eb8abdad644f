@@ -1,0 +1,11 @@
+package com.psja;
+
+import static java.lang.System.out;
+
+public class DeadLock {
+
+	public static void main( String args[] ) {
+		out.println( "In the Deadlock" );
+	}
+	
+}

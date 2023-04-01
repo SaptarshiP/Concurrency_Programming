@@ -1,0 +1,17 @@
+package com.psja.check;
+
+import java.lang.Thread;
+
+public class A implements Check {
+
+	@Override
+	public void Test( Check chB ) {
+		System.out.println( "*****IN THE A CLASS******" );
+		chB.display();
+	}
+	
+	@Override
+	public void display() {
+		
+	}
+}

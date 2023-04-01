@@ -1,0 +1,11 @@
+package com.psja.check;
+
+public class A implements Check {
+
+	@Override
+	public void Test( Check chB ) {
+		System.out.println
+	}
+	
+	public 
+}

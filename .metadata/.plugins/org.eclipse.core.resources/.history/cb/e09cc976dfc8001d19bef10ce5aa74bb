@@ -1,0 +1,25 @@
+package com.psja.block;
+
+public class InvokerObjectLevelBlock implements InvokerInterface {
+
+	@Override
+	public void invoke() {
+		
+		TestLockClass testLockClass = new TestLockClass();
+		ObjectLevelBlock objectLevelBlock = new ObjectLevelBlock( testLockClass );
+		ThreadObjectLevelBlock threadObjectLevelBlock = new ThreadObjectLevelBlock();
+		threadObjectLevelBlock.setObjectLevelBlock( objectLevelBlock );
+		Thread th1 = new Thread( threadObjectLevelBlock );
+		
+		//ObjectLevelBlock objectLevelBlock2 = new ObjectLevelBlock();
+		ThreadObjectLevelBlock threadObjectLevelBlock2 = new ThreadObjectLevelBlock();
+		threadObjectLevelBlock2.setObjectLevelBlock( objectLevelBlock );
+		Thread th2 = new Thread( threadObjectLevelBlock2 );
+		
+		th1.start();
+		th2.start();
+		
+		
+	}
+	
+}

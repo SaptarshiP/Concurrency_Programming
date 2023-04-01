@@ -1,0 +1,14 @@
+package com.psja.check;
+
+public class A implements Check {
+
+	@Override
+	public void Test( Check chB ) {
+		System.out.println( "*****IN THE A CLASS******" );
+	}
+	
+	@Override
+	public void display() {
+		
+	}
+}

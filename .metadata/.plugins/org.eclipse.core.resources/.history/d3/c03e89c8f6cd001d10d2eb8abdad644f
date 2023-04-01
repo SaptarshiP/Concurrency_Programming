@@ -1,0 +1,20 @@
+package com.psja.check;
+
+import java.lang.Thread;
+
+public class B implements Check {
+
+	@Override
+	public void Test( Check chkA ) {
+		System.out.println( "*****IN THE TEST B CLASS*****" );
+		
+		Thread.currentThread().sleep( 2000 );
+		
+		chkA.display();
+	}
+	
+	@Override
+	public void display() {
+		
+	}
+}

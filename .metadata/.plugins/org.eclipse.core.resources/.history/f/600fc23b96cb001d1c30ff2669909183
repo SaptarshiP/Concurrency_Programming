@@ -1,0 +1,13 @@
+package com.psja.execution;
+
+import java.lang.Runnable;
+
+public class Thread1 implements Runnable{
+
+	@Override
+	public void run() {
+		
+		
+	}
+	
+}

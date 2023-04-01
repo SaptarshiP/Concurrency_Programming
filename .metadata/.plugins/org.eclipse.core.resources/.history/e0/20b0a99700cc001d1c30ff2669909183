@@ -1,0 +1,22 @@
+package com.psja.execution;
+
+import java.lang.FunctionalInterface;
+import java.util.Queue;
+import java.util.LinkedList;
+
+@FunctionalInterface
+interface CheckInterface<E>{
+	public void add( E data1 );
+}
+
+public class Job<T> {
+
+	public Queue<T> queue = new LinkedList<>();
+	
+	public void add() {
+		CheckInterface checkInterface = ( data1 )-> queue.add( data1 );
+		
+		checkInterface.add(  );
+	}
+	
+}

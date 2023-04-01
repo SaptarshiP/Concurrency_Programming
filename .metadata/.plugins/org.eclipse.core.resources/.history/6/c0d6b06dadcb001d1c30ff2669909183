@@ -1,0 +1,11 @@
+package com.psja.execution;
+
+import java.lang.Thread;
+
+public class Thread2 extends Thread {
+
+	@Override
+	public void run() {
+		
+	}
+}

@@ -1,0 +1,17 @@
+package com.psja.block;
+
+public class ObjectLevelBlock {
+
+	public void check() {
+		
+		TestLockClass testLockClass1 = new TestLockClass();
+		
+		synchronized( testLockClass1 ) {
+			
+			testLockClass1.test();
+		}
+		
+		
+	}
+	
+}
